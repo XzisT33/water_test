@@ -10,7 +10,7 @@ app = FastAPI(
     version="0.1",
 )
 
-with open("D:\\MLOps\Data_Thinkers_MLOPS\\ml_pipeline\\rf_model.pkl", "rb") as file:
+with open("rf_model.pkl", "rb") as file:
     model = pickle.load(file) 
 
 @app.get("/")
